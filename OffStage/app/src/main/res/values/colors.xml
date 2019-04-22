@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2bc5b4</color>
+    <color name="colorPrimaryDark">#002824</color>
+    <color name="colorAccent">#F5F5F5</color>
+    <color name="colorLogo">#d73313</color>
+    <color name="colorSenderBubble">#ff0000</color>
+    <color name="colorReceiverBubble">#00ff00</color>
+    <color name="colorPrimary2">#3F51B5</color>
+    <color name="colorPrimaryDark2">#303F9F</color>
+    <color name="colorAccent2">#FF4081</color>
+</resources>

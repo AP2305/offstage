@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addEvents"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edit_event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Name"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"
+            android:textColorHint="@color/colorPrimary" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/edit_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:hint="DD/MM/YYYY"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_margin="10dp">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/edit_time_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
+                    android:hint="00:00"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/edit_time_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
+                    android:hint="00:00"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/location_pin"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:hint="Location"
+            android:textSize="30dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="10dp"
+            android:scrollbars="vertical">
+            <EditText
+                android:id="@+id/edit_event_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:hint="Enter Event Description Here"
+                android:scrollbars="vertical"/>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prize worth"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/edit_prize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:paddingTop="10dp"
+                android:inputType="number"
+                android:hint="Rs. 20000"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+        <CheckBox
+            android:id="@+id/solobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:text="SOLO"/>
+
+         <EditText
+             android:id="@+id/solofees"
+             android:hint="fees"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textColor="@color/colorAccent"
+             android:textColorHint="@color/colorAccent"
+             android:layout_marginLeft="10dp"
+             android:textAlignment="center"
+             android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <CheckBox
+                android:id="@+id/duetbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:text="DUET"/>
+
+            <EditText
+                android:id="@+id/duetfees"
+                android:hint="fees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <CheckBox
+                android:id="@+id/grpbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:text="GROUP"/>
+
+            <EditText
+                android:id="@+id/grpfees"
+                android:hint="fees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:inputType="number"/>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/paytm"
+                    android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/paytm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:paddingTop="10dp"
+                android:hint="Paytm Number"
+                android:inputType="number"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:src="@drawable/gpay"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/GooglePay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:hint="Google Pay Number"
+                android:inputType="number"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

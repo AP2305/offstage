@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMember"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/participant"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Members"
+            android:textSize="30dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <ListView
+            android:id="@+id/listvieww"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/expense"
+            android:layout_below="@+id/titlebar"
+            android:layout_weight="0.9"/>
+
+        <Button
+            android:layout_weight="0.1"
+            android:id="@+id/addmember"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Add Member"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

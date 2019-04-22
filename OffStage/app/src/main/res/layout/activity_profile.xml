@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="40dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/user_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="@drawable/chat1"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/user_contact"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact No."
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:background="@drawable/loginbtn"
+        android:layout_gravity="bottom"
+        android:padding="20dp"
+        android:layout_margin="20dp"/>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExpenseTrackerActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/expense1"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Expense Tracker"
+            android:textSize="30dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="0.15"-->
+            <!--android:weightSum="1">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/inc"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:gravity="center"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textColor="#0f0"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/exp"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:gravity="center"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textColor="#f00"/>-->
+
+        <!--</LinearLayout>-->
+
+        <ListView
+            android:id="@+id/listvieww"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/expense"
+            android:layout_below="@+id/titlebar"
+            android:layout_weight="0.9"/>
+
+        <Button
+            android:layout_weight="0.1"
+            android:id="@+id/expense"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Add New Transaction"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+</LinearLayout>

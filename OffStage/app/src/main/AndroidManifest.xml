@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell5559.offstage">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="nosensor"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomePage" />
+        <activity android:name=".EventsList" />
+        <activity android:name=".EventDetails" />
+        <activity android:name=".ExpenseTrackerActivity" />
+        <activity android:name=".GroupsActivity" />
+        <activity android:name=".Chat_Room" />
+        //TodoList
+        <activity
+            android:name=".todo_MainActivity"
+            android:theme="@style/todotheme" />
+
+        <receiver
+            android:name=".NotificationPublisher"
+            android:theme="@style/todotheme" />
+
+        <activity
+            android:name=".AddItem"
+            android:theme="@style/todotheme" />
+        <activity
+            android:name=".EditItem"
+            android:theme="@style/todotheme" />
+        <activity
+            android:name=".addCategory"
+            android:theme="@style/todotheme" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.version" -->
+        <!-- android:value="@integer/google_play_services_version" /> -->
+
+        <activity android:name=".addEvents" />
+        <activity android:name=".ParticipantsActivity" />
+        <activity android:name=".ExpenseActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".AddMembers"
+            android:theme="@style/todotheme">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".AddMember"></activity>
+    </application>
+
+</manifest>

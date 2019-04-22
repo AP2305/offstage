@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "304506102075",
+    "firebase_url": "https://chat-c4423.firebaseio.com",
+    "project_id": "chat-c4423",
+    "storage_bucket": "chat-c4423.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304506102075:android:223f6e2c5ac34fe1",
+        "android_client_info": {
+          "package_name": "com.example.dell5559.offstage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304506102075-621rcpcc1cg7oug33568bhvggpj8l0s3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdCwkrI8zbjydHxiYrXoy-DRlzQiBsMFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304506102075-621rcpcc1cg7oug33568bhvggpj8l0s3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
